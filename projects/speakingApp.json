@@ -1,0 +1,13 @@
+{
+  "name": "Speaking App",
+  "github": "https://github.com/Gaviobm1/blog-gav-rsc",
+  "link": "super",
+  "excerpt": "App for practicing for speaking exams",
+  "technologies": [
+    "Next.js",
+    "TypeScript",
+    "CSS Modules",
+    "Prisma ORM",
+    "React"
+  ]
+}

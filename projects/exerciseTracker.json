@@ -1,0 +1,13 @@
+{
+  "name": "iOS app for tracking exercise routines",
+  "github": "https://github.com/Gaviobm1/blog-gav-rsc",
+  "link": "mega",
+  "excerpt": "A project built using SwiftUI",
+  "technologies": [
+    "Next.js",
+    "TypeScript",
+    "CSS Modules",
+    "Prisma ORM",
+    "React"
+  ]
+}

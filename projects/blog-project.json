@@ -1,0 +1,13 @@
+{
+  "name": "Blog using React Server Components",
+  "github": "https://github.com/Gaviobm1/blog-gav-rsc",
+  "link": "kool",
+  "excerpt": "A project built using Next.js and TypeScript with CSS Modules for the styling",
+  "technologies": [
+    "Next.js",
+    "TypeScript",
+    "CSS Modules",
+    "Prisma ORM",
+    "React"
+  ]
+}
