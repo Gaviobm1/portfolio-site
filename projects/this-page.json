@@ -2,12 +2,12 @@
   "name": "This page",
   "github": "https://github.com/Gaviobm1/blog-gav-rsc",
   "link": "/",
-  "excerpt": "An honourable mention to this page which, although basic, gave me the chance to learn a new framework and try out graphql",
+  "excerpt": "An honourable mention to this page which, although basic, gave me the chance to learn a new framework, Gatsby, and try out GraphQL. Using styled components was also a lot of fun as bundling everything together feels awesome.",
   "technologies": [
     "Gatsby",
     "TypeScript",
     "Styled Components",
-    "GraphQl",
+    "GraphQL",
     "React"
   ]
 }

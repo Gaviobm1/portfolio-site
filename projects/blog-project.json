@@ -1,8 +1,8 @@
 {
   "name": "Blog using React Server Components",
   "github": "https://github.com/Gaviobm1/blog-gav-rsc",
-  "link": "kool",
-  "excerpt": "A project built using Next.js and TypeScript with CSS Modules for the styling",
+  "link": "https://blog-gav-rsc.vercel.app/",
+  "excerpt": "I built this with the intention of getting to grips with React Server Components and learning how to optimise the delivery of information to a user in as efficient a manner as possible.",
   "technologies": [
     "Next.js",
     "TypeScript",

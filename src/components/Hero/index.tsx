@@ -50,7 +50,7 @@ const Wrapper = styled.div`
   margin: auto;
   padding-bottom: var(--margin-padding);
   position: relative;
-  border-bottom: 2px solid black;
+
   @media (max-width: 760px) {
     display: flex;
     flex-direction: column;

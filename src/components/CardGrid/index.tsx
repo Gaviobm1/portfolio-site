@@ -47,7 +47,7 @@ const Wrapper = styled.div`
   margin: auto;
   padding-top: var(--margin-padding);
   padding-bottom: var(--margin-padding);
-  border-bottom: 2px solid black;
+
   @media (max-width: 550px) {
     border-bottom: none;
     padding-top: calc(var(--mobile-padding) / 3);

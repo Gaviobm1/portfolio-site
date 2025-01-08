@@ -1,0 +1,13 @@
+{
+  "name": "Exercise Tracker backend",
+  "github": "https://github.com/Gaviobm1/exercise-backend",
+  "link": "https://github.com/Gaviobm1/exercise-backend",
+  "excerpt": "This part of a larger project taught me a lot about routing in Express and working with HTTP headers. I gained a lot of experience working with Passport.js and using JSON Web Tokens for authorization as well as getting the chance to work with PostgreSQL for my database.",
+  "technologies": [
+    "Express.js",
+    "Passport",
+    "PostgreSQL",
+    "Node.js",
+    "JSON Web Tokens"
+  ]
+}

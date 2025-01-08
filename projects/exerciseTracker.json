@@ -1,13 +1,14 @@
 {
-  "name": "iOS app for tracking exercise routines",
+  "name": "Web app for tracking exercise routines",
   "github": "https://github.com/Gaviobm1/blog-gav-rsc",
   "link": "mega",
-  "excerpt": "A project built using SwiftUI",
+  "excerpt": "A project that helped me learn a lot about UI design through Figma. It also gave me a chance to practice my REST API skills by building the backend in Express.",
   "technologies": [
-    "Next.js",
+    "Express",
+    "Rest APIs",
     "TypeScript",
     "CSS Modules",
-    "Prisma ORM",
+    "PostgreSQL",
     "React"
   ]
 }

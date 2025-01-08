@@ -6,18 +6,13 @@ export default function Footer() {
   return (
     <Wrapper>
       <InfoWrapper>
-        <Contact>
-          <Phone />
-          <p>+34 678 042 307</p>
-        </Contact>
-        <Contact>
-          <Mail />
-          <p>gavinobrien@outlook.com</p>
-        </Contact>
-        <Contact>
-          <GitHub />
-          <p>https://github.com/Gaviobm1/</p>
-        </Contact>
+        <MorphLink href="https://github.com/Gaviobm1/">
+          <Contact>
+            <GitHub />
+            <p>https://github.com/Gaviobm1/</p>
+          </Contact>
+        </MorphLink>
+        <p>&copy; 2024 Gavin O&apos;Brien</p>
       </InfoWrapper>
     </Wrapper>
   );
@@ -43,7 +38,19 @@ const InfoWrapper = styled.div`
 `;
 
 const Contact = styled.article`
+  font-family: "Recursive";
   display: flex;
   align-items: center;
   gap: 0.5rem;
+`;
+
+const MorphLink = styled.a`
+  font-variation-settings: "CASL" 0;
+  opacity: 1;
+  transition: opacity 600ms ease, font-variation-settings 400ms ease;
+  &:hover {
+    font-variation-settings: "CASL" 1;
+    opacity: 0.8;
+    transition: opacity 600ms ease, font-variation-settings 400ms ease;
+  }
 `;
