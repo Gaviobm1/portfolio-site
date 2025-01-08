@@ -14,9 +14,11 @@ export default function Card({ cardData }: { cardData: Project }) {
         <a href={github}>
           <GitHub />
         </a>
-        <a href={link}>
-          <ExternalLink />
-        </a>
+        {link.length > 0 && (
+          <a href={link}>
+            <ExternalLink />
+          </a>
+        )}
       </LinksWrapper>
       <IconWrapper>
         {technologies.map((technology, index) => (

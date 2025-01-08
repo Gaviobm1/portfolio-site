@@ -2,7 +2,7 @@
   "name": "Blog using React Server Components",
   "github": "https://github.com/Gaviobm1/blog-gav-rsc",
   "link": "https://blog-gav-rsc.vercel.app/",
-  "excerpt": "I built this with the intention of getting to grips with React Server Components and learning how to optimise the delivery of information to a user in as efficient a manner as possible.",
+  "excerpt": "I built this with the intention of getting to grips with React Server Components and learning how to optimise the delivery of information to a user in as efficient a manner as possible. (Note: The articles on it for now are placeholder AI generated text. I did this in order to demonstrate the pagination function.)",
   "technologies": [
     "Next.js",
     "TypeScript",

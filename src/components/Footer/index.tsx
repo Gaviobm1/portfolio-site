@@ -1,17 +1,27 @@
 import * as React from "react";
 import styled from "styled-components";
-import { Phone, Mail, GitHub } from "react-feather";
+import { Phone, Mail, GitHub, Linkedin } from "react-feather";
 
 export default function Footer() {
   return (
     <Wrapper>
       <InfoWrapper>
-        <MorphLink href="https://github.com/Gaviobm1/">
-          <Contact>
-            <GitHub />
-            <p>https://github.com/Gaviobm1/</p>
-          </Contact>
-        </MorphLink>
+        <LinkWrapper>
+          <MorphLink href="https://github.com/Gaviobm1/">
+            <Contact>
+              <GitHub />
+              <DesktopParagraph>https://github.com/Gaviobm1/</DesktopParagraph>
+            </Contact>
+          </MorphLink>
+          <MorphLink href="https://github.com/Gaviobm1/">
+            <Contact>
+              <Linkedin />
+              <DesktopParagraph>
+                https://www.linkedin.com/in/gavinobrien90/
+              </DesktopParagraph>
+            </Contact>
+          </MorphLink>
+        </LinkWrapper>
         <p>&copy; 2024 Gavin O&apos;Brien</p>
       </InfoWrapper>
     </Wrapper>
@@ -52,5 +62,22 @@ const MorphLink = styled.a`
     font-variation-settings: "CASL" 1;
     opacity: 0.8;
     transition: opacity 600ms ease, font-variation-settings 400ms ease;
+  }
+`;
+
+const DesktopParagraph = styled.p`
+  display: block;
+  @media (max-width: 900px) {
+    display: none;
+  }
+`;
+
+const LinkWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  @media (max-width: 900px) {
+    flex-direction: row;
+    justify-content: space-around;
   }
 `;
