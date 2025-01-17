@@ -3,7 +3,7 @@ import ContactForm from "component/ContactForm";
 import StickyButton from "component/StickyButton";
 import * as Dialog from "@radix-ui/react-dialog";
 import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
-import * as styles from "./ContactModal.module.css";
+import { trigger, overlay, content, close } from "./ContactModal.module.css";
 import { Mail, X } from "react-feather";
 import useOpenContext from "../../hooks/useOpenContext";
 
@@ -11,23 +11,19 @@ export default function ContactModal() {
   const { open, setOpen } = useOpenContext();
   return (
     <Dialog.Root open={open} onOpenChange={setOpen}>
-      <Dialog.Trigger className={styles.trigger}>
-        <Mail
-          size={36}
-          fill="hsl(0deg, 0%, 100%)"
-          stroke="hsl(0deg, 50%, 40%)"
-        />
+      <Dialog.Trigger className={trigger}>
+        <Mail size={46} fill="hsl(0deg, 0%, 95%)" stroke="hsl(230, 96%, 65%)" />
       </Dialog.Trigger>
       <Dialog.Portal>
-        <Dialog.Overlay className={styles.overlay}>
-          <Dialog.Content className={styles.content}>
+        <Dialog.Overlay className={overlay}>
+          <Dialog.Content className={content}>
             <VisuallyHidden.Root>
               <Dialog.Title>contact form</Dialog.Title>
               <Dialog.Description>
                 a form to send an email to Gavin
               </Dialog.Description>
             </VisuallyHidden.Root>
-            <Dialog.Close className={styles.close}>
+            <Dialog.Close className={close}>
               <X />
             </Dialog.Close>
             <ContactForm />

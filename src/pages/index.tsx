@@ -3,9 +3,11 @@ import Seo from "component/Seo";
 import Layout from "component/Layout";
 import Hero from "component/Hero";
 import CardGrid from "component/CardGrid";
+import ContactModal from "component/ContactModal";
 import { graphql, PageProps } from "gatsby";
-import { QueryDataType, Image } from "types";
+import { QueryDataType, Image } from "src/types";
 import { getImage } from "gatsby-plugin-image";
+import OpenProvider from "component/OpenProvider";
 
 export default function Home({ data }: PageProps<QueryDataType>) {
   const { allProjectsJson, allImageSharp, heroDataJson } = data;
@@ -32,16 +34,19 @@ export default function Home({ data }: PageProps<QueryDataType>) {
 
   return (
     <div style={{ position: "relative" }}>
-      <Layout>
-        <Hero
-          bigImage={bigImage}
-          sideImage={sideImage}
-          middleImage={middleImage}
-          title={title}
-          blurb={blurb}
-        />
-        <CardGrid nodes={nodes} />
-      </Layout>
+      <OpenProvider>
+        <ContactModal />
+        <Layout>
+          <Hero
+            bigImage={bigImage}
+            sideImage={sideImage}
+            middleImage={middleImage}
+            title={title}
+            blurb={blurb}
+          />
+          <CardGrid nodes={nodes} />
+        </Layout>
+      </OpenProvider>
     </div>
   );
 }

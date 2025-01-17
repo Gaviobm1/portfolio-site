@@ -1,14 +1,18 @@
 import React from "react";
-import * as styles from "./Button.module.css";
+import { btn, btnText } from "./Button.module.css";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
 }
 
-export default function Button({ children, ...delegated }: ButtonProps) {
+export default function Button({
+  children,
+  type = "submit",
+  ...delegated
+}: ButtonProps) {
   return (
-    <button className={styles.btn} {...delegated}>
-      <span className={styles.btnText}>{children}</span>
+    <button className={btn} type={type} {...delegated}>
+      <span className={btnText}>{children}</span>
     </button>
   );
 }

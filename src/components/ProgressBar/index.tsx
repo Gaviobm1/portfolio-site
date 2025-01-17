@@ -132,7 +132,7 @@ const BarWrap = styled.div`
 
 const Progress = styled.div<ProgressProps>`
   width: ${(props) => props.value + "%"};
-  background: hsla(240, 80%, 60%, 1);
+  background: hsla(240, 80%, 90%, 1);
   height: 100%;
 `;
 

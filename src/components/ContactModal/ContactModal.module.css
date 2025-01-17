@@ -1,11 +1,11 @@
 .trigger {
   position: sticky;
+  left: 1rem;
   top: 1rem;
-  left: 97%;
   padding: 2rem;
   border: none;
   background: transparent;
-
+  z-index: 100;
   &:hover {
     cursor: pointer;
   }
@@ -17,6 +17,7 @@
   display: grid;
   place-items: center;
   overflow-y: auto;
+  z-index: 200;
 }
 
 .content {
@@ -54,25 +55,6 @@
   outline-offset: var(--outline-offset);
   transition: font-variation-settings 400ms ease-in-out;
   color: var(--font-color);
-}
-
-.trigger {
-  background-color: transparent;
-  display: flex;
-  justify-content: flex-start;
-  align-self: flex-start;
-  align-items: center;
-  gap: 1rem;
-  padding: 0;
-}
-
-.button:hover,
-.button:focus,
-.trigger:hover,
-.trigger:focus {
-  cursor: pointer;
-  font-variation-settings: var(--button-hover-font-settings);
-  transition: font-variation-settings 200ms ease-in-out;
 }
 
 @keyframes fadein {

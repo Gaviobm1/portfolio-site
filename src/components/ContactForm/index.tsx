@@ -3,13 +3,19 @@ import Form from "../Form/Form";
 import Input from "../Input/Input";
 import TypeArea from "../TypeArea/TypeArea";
 import Button from "../Button/Button";
-import { sendEmail } from "../../../helpers";
+import sendEmail from "../../../helpers";
 import useOpenContext from "../../hooks/useOpenContext";
 
 export default function ContactForm() {
-  const { setOpen } = useOpenContext();
+  const { setOpen, setToast } = useOpenContext();
   return (
-    <Form onSubmit={sendEmail}>
+    <Form
+      onSubmit={async (e) => {
+        const success = await sendEmail(e);
+        setOpen(false);
+        success ? setToast("success") : setToast("error");
+      }}
+    >
       <Input
         id="subject"
         label="Subject"
@@ -27,9 +33,7 @@ export default function ContactForm() {
         label="Message"
         placeholder="Hi! I'm getting in touch because..."
       />
-      <Button type="submit" onClick={() => setOpen(false)}>
-        Send
-      </Button>
+      <Button type="submit">Send</Button>
     </Form>
   );
 }

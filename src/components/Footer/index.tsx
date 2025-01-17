@@ -35,6 +35,7 @@ const Wrapper = styled.div`
   gap: 1rem;
   justify-content: center;
   padding-top: var(--margin-padding);
+  color: hsl(0deg 0% 100%);
   @media (max-width: 550px) {
     justify-content: center;
     padding-top: var(--mobile-padding);

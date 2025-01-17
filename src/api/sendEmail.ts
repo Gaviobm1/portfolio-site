@@ -1,20 +1,21 @@
-import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/nodejs";
 import { Request, Response } from "express";
 
 export default async function handler(req: Request, res: Response) {
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
   }
-
   const { subject, user_name, user_email, message } = req.body;
 
   if (!subject || !user_name || !user_email || !message) {
     return res.status(400).json({ error: "All fields are required" });
   }
 
+  console.log(process.env.NODE_ENV);
+
   try {
     if (process.env.EMAIL_PUBLIC_KEY) {
-      emailjs.init(process.env.EMAIL_PUBLIC_KEY);
+      emailjs.init({ publicKey: process.env.EMAIL_PUBLIC_KEY });
     } else {
       return res.status(500).json({ error: "Email public key is not defined" });
     }

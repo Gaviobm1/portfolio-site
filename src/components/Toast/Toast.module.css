@@ -44,10 +44,10 @@
   cursor: pointer;
 }
 
-.notice {
+.success {
   background: hsl(235deg 0% 100%);
 }
-.notice .iconContainer {
+.success .iconContainer {
   color: hsl(235deg 100% 50%);
 }
 .error {

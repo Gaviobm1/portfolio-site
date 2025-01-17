@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import { GatsbyImage } from "gatsby-plugin-image";
-import { Image } from "types";
+import { Image } from "src/types";
 
 export default function Hero({
   bigImage,
@@ -50,6 +50,7 @@ const Wrapper = styled.div`
   margin: auto;
   padding-bottom: var(--margin-padding);
   position: relative;
+  color: hsl(0deg 0% 100%);
 
   @media (max-width: 760px) {
     display: flex;

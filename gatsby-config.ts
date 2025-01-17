@@ -1,5 +1,7 @@
 import type { GatsbyConfig, GatsbyNode } from "gatsby";
 
+require("dotenv").config();
+
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Gavin O'Brien`,

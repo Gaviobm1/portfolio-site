@@ -1,5 +1,5 @@
 import React from "react";
-import * as styles from "./TypeArea.module.css";
+import { wrapper, content } from "./TypeArea.module.css";
 
 export interface TypeAreaProps
   extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
@@ -9,14 +9,9 @@ export interface TypeAreaProps
 
 export default function TypeArea({ label, id, ...delegated }: TypeAreaProps) {
   return (
-    <label htmlFor={id} className={styles.wrapper}>
+    <label htmlFor={id} className={wrapper}>
       {label}
-      <textarea
-        name={id}
-        id={id}
-        className={styles.content}
-        {...delegated}
-      ></textarea>
+      <textarea name={id} id={id} className={content} {...delegated}></textarea>
     </label>
   );
 }

@@ -1,6 +1,6 @@
 import * as React from "react";
 import Card from "component/Card";
-import { Project } from "types";
+import { Project } from "src/types";
 import styled from "styled-components";
 import ProgressBar from "component/ProgressBar";
 
@@ -41,7 +41,7 @@ export default function CardGrid({ nodes }: { nodes: [Project] }) {
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
+  gap: 2.5rem;
   justify-content: space-between;
   width: var(--width);
   margin: auto;

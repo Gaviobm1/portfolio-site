@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Project } from "types";
+import { Project } from "src/types";
 import styled from "styled-components";
 import IconWrapper from "component/IconWrapper";
 import { GitHub, ExternalLink } from "react-feather";
@@ -34,23 +34,30 @@ const Wrapper = styled.div`
   flex-direction: column;
   background-color: hsl(0deg, 0%, 93%);
   border-radius: 4px;
-  box-shadow: 4px 4px 8px hsl(0deg, 0%, 80%);
+  box-shadow: 2px 2px 10px hsl(0deg, 0%, 80%);
   padding: 1.5rem;
   min-width: 300px;
   gap: 2rem;
   @media (max-width: 550px) {
     margin-top: 1rem;
     margin-bottom: 1rem;
+    padding: 1rem;
   }
 `;
 
 const Heading = styled.h1`
-  height: 20%;
+  min-height: 95px;
+  @media (max-width: 550px) {
+    min-height: auto;
+  }
 `;
 
 const InfoWrapper = styled.p`
   display: block;
-  height: 40%;
+  min-height: 180px;
+  @media (max-width: 550px) {
+    min-height: none;
+  }
 `;
 
 const InfoPill = styled.article`
