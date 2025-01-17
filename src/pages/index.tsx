@@ -31,16 +31,18 @@ export default function Home({ data }: PageProps<QueryDataType>) {
   const nodes = allProjectsJson.nodes;
 
   return (
-    <Layout>
-      <Hero
-        bigImage={bigImage}
-        sideImage={sideImage}
-        middleImage={middleImage}
-        title={title}
-        blurb={blurb}
-      />
-      <CardGrid nodes={nodes} />
-    </Layout>
+    <div style={{ position: "relative" }}>
+      <Layout>
+        <Hero
+          bigImage={bigImage}
+          sideImage={sideImage}
+          middleImage={middleImage}
+          title={title}
+          blurb={blurb}
+        />
+        <CardGrid nodes={nodes} />
+      </Layout>
+    </div>
   );
 }
 

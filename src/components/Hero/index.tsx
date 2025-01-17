@@ -68,8 +68,8 @@ const Title = styled.h1`
 const TextWrap = styled.p`
   position: absolute;
   bottom: 5%;
-  right: -23%;
-  max-width: 60ch;
+  right: -9%;
+  max-width: 50ch;
   font-weight: 500;
   @media (max-width: 900px) {
     max-width: 40ch;

@@ -13,7 +13,7 @@ export default function Footer() {
               <DesktopParagraph>https://github.com/Gaviobm1/</DesktopParagraph>
             </Contact>
           </MorphLink>
-          <MorphLink href="https://github.com/Gaviobm1/">
+          <MorphLink href="https://www.linkedin.com/in/gavinobrien90/">
             <Contact>
               <Linkedin />
               <DesktopParagraph>

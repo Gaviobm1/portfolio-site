@@ -8,8 +8,8 @@ export default function Card({ cardData }: { cardData: Project }) {
   const { name, excerpt, github, link, technologies } = cardData;
   return (
     <Wrapper>
-      <h1>{name}</h1>
-      <p>{excerpt}</p>
+      <Heading>{name}</Heading>
+      <InfoWrapper>{excerpt}</InfoWrapper>
       <LinksWrapper>
         <a href={github}>
           <GitHub />
@@ -32,16 +32,25 @@ export default function Card({ cardData }: { cardData: Project }) {
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  background-color: hsl(0deg, 0%, 93%);
+  border-radius: 4px;
+  box-shadow: 4px 4px 8px hsl(0deg, 0%, 80%);
   padding: 1.5rem;
   min-width: 300px;
-  gap: 1rem;
+  gap: 2rem;
   @media (max-width: 550px) {
-    &:not(:last-child) {
-      border-right: 2px solid black;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-    }
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
+`;
+
+const Heading = styled.h1`
+  height: 20%;
+`;
+
+const InfoWrapper = styled.p`
+  display: block;
+  height: 40%;
 `;
 
 const InfoPill = styled.article`

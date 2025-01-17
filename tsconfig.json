@@ -2,7 +2,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "component/*": ["src/components/*"]
+      "component/*": ["src/components/*"],
+      "src/*": ["./src/*"]
     },
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 

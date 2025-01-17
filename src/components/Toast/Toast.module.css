@@ -1,0 +1,67 @@
+.toast {
+  position: fixed;
+  right: 1.125rem;
+  bottom: 3rem;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 16px;
+  animation: slideIn 700ms ease-in-out;
+  color: black;
+  color-scheme: light;
+  background: white;
+  max-width: 100%;
+  width: 350px;
+  --shadow-color: 250deg 35% 11%;
+  box-shadow: 0px 0.3px 0.6px hsl(var(--shadow-color) / 0.2),
+    0px 0.7px 1.4px -1.1px hsl(var(--shadow-color) / 0.19),
+    0px 1.5px 3.7px -2.1px hsl(var(--shadow-color) / 0.18),
+    0.1px 4px 9.2px -3.2px hsl(var(--shadow-color) / 0.17),
+    0.2px 6px 15px -2.3px hsl(var(--shadow-color) / 0.16);
+}
+
+.content {
+  flex: 1;
+  padding: 12px 0px;
+  font-weight: 600;
+}
+
+.iconContainer {
+  flex-shrink: 0;
+  padding: 16px;
+  padding-right: 0px;
+}
+.iconContainer svg {
+  display: block;
+}
+
+.closeButton {
+  flex-shrink: 0;
+  border: none;
+  background: transparent;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.notice {
+  background: hsl(235deg 0% 100%);
+}
+.notice .iconContainer {
+  color: hsl(235deg 100% 50%);
+}
+.error {
+  background: hsl(350deg 90% 96%);
+}
+.error .iconContainer {
+  color: hsl(345deg 100% 50%);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(110%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}

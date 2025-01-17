@@ -1,0 +1,14 @@
+{
+  "name": "Rest Countries API",
+  "github": "https://github.com/Gaviobm1/rest-countries-api",
+  "link": "https://rest-countries-api-sand-six.vercel.app/",
+  "excerpt": "Allows users to search information about countries and filter them by region, as well as implementing a persistent darkmode using cookies. I got to learn more about REST APIs and how to use them in React.",
+  "technologies": [
+    "TypeScript",
+    "Rest APIs",
+    "Vite",
+    "CSS Modules",
+    "Styled Components",
+    "React"
+  ]
+}

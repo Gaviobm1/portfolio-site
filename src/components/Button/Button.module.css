@@ -1,0 +1,38 @@
+.btnWrapper {
+  position: relative;
+  width: 25%;
+}
+
+.btn {
+  width: 40%;
+  border: none;
+  border-radius: 1000px 5000px 5000px 1000px;
+  position: relative;
+  background-color: hsl(0deg 50% 83%);
+  padding: 1rem;
+}
+
+.btnText {
+  display: block;
+  transition: transform 600ms;
+}
+
+.glow {
+  position: absolute;
+  inset: 0;
+  filter: blur(var(--button-blur));
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .btn:hover .btnText,
+  .btn:focus .btnText {
+    transform: scale(1.2);
+    transition: transform 200ms;
+  }
+}
+
+@media (max-width: 550px) {
+  .btnWrapper {
+    width: 35%;
+  }
+}
