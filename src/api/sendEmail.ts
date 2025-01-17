@@ -2,6 +2,9 @@ import emailjs from "@emailjs/nodejs";
 import { Request, Response } from "express";
 
 export default async function handler(req: Request, res: Response) {
+  console.log("EMAIL_PUBLIC_KEY:", process.env.EMAIL_PUBLIC_KEY);
+  console.log("EMAIL_SERVICE_ID:", process.env.EMAIL_SERVICE_ID);
+  console.log("EMAIL_TEMPLATE_ID:", process.env.EMAIL_TEMPLATE_ID);
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
   }
@@ -10,8 +13,6 @@ export default async function handler(req: Request, res: Response) {
   if (!subject || !user_name || !user_email || !message) {
     return res.status(400).json({ error: "All fields are required" });
   }
-
-  console.log(process.env.NODE_ENV);
 
   try {
     if (process.env.EMAIL_PUBLIC_KEY) {
