@@ -43,6 +43,7 @@ body,
     var(--gradient-blue) 0%,
     var(--gradient-red) 100%
   );
+  padding-top: env(safe-area-inset-top);
 }
 
 img,
