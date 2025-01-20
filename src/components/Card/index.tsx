@@ -36,7 +36,7 @@ const Wrapper = styled.div`
   border-radius: 4px;
   box-shadow: 2px 2px 10px hsl(0deg, 0%, 80%);
   padding: 1.5rem;
-  min-width: 300px;
+  min-width: 350px;
   gap: 2rem;
   @media (max-width: 550px) {
     margin-top: 1rem;

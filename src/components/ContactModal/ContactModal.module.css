@@ -1,15 +1,29 @@
 .trigger {
-  position: sticky;
-  left: 1rem;
-  top: 1rem;
-  padding: 2rem;
+  display: flex;
+  gap: 0.5rem;
+  color: var(--text-links-color);
   border: none;
   background: transparent;
   z-index: 100;
+  font-family: "Recursive";
+  font-variation-settings: "CASL" 0;
+  opacity: 1;
+  transition: opacity 600ms ease, font-variation-settings 400ms ease;
   &:hover {
     cursor: pointer;
+    font-variation-settings: "CASL" 1;
+    opacity: 0.8;
+    transition: opacity 600ms ease, font-variation-settings 400ms ease;
   }
 }
+
+.triggerText {
+  display: block;
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
 .overlay {
   background: rgba(0 0 0 / 0.5);
   position: fixed;
@@ -43,8 +57,7 @@
   cursor: pointer;
 }
 
-.button,
-.trigger {
+.button {
   font-size: 1.25rem;
   background-color: var(--secondary-background);
   border: none;

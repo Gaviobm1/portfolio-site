@@ -5,25 +5,7 @@ import { Phone, Mail, GitHub, Linkedin } from "react-feather";
 export default function Footer() {
   return (
     <Wrapper>
-      <InfoWrapper>
-        <LinkWrapper>
-          <MorphLink href="https://github.com/Gaviobm1/">
-            <Contact>
-              <GitHub />
-              <DesktopParagraph>https://github.com/Gaviobm1/</DesktopParagraph>
-            </Contact>
-          </MorphLink>
-          <MorphLink href="https://www.linkedin.com/in/gavinobrien90/">
-            <Contact>
-              <Linkedin />
-              <DesktopParagraph>
-                https://www.linkedin.com/in/gavinobrien90/
-              </DesktopParagraph>
-            </Contact>
-          </MorphLink>
-        </LinkWrapper>
-        <p>&copy; 2024 Gavin O&apos;Brien</p>
-      </InfoWrapper>
+      <p>&copy; 2025 Gavin O&apos;Brien</p>
     </Wrapper>
   );
 }

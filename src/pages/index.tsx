@@ -4,6 +4,7 @@ import Layout from "component/Layout";
 import Hero from "component/Hero";
 import CardGrid from "component/CardGrid";
 import ContactModal from "component/ContactModal";
+import Header from "component/Header";
 import { graphql, PageProps } from "gatsby";
 import { QueryDataType, Image } from "src/types";
 import { getImage } from "gatsby-plugin-image";
@@ -35,8 +36,8 @@ export default function Home({ data }: PageProps<QueryDataType>) {
   return (
     <div style={{ position: "relative" }}>
       <OpenProvider>
-        <ContactModal />
         <Layout>
+          <Header />
           <Hero
             bigImage={bigImage}
             sideImage={sideImage}

@@ -28,7 +28,7 @@ const Wrapper = styled.div`
   font-family: "Asap";
   min-height: 100%;
   max-width: 100%;
-  padding: 5rem;
+  padding: 2rem;
 
   @media (max-width: 900px) {
     scrollbar-width: none;
